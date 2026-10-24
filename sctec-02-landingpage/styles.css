@@ -1,0 +1,266 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1, h2, h4{
+  font-family: "fredoka", sans-serif;
+}
+h2{
+  font-size: 46px;
+}
+h1 {
+  
+  font-size: 38px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.conteiner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.logoTipo{
+  font-family: "fredoka", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(41, 144, 109);
+}
+.amarelo{
+  color: #f4c542;
+}
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+.cabecalho .menu{
+  display: flex;
+  gap: 16px;
+}
+.cabecalho .menu a {
+  color: rgb(41, 144, 109);
+  text-decoration: none;
+}
+.humburguer{
+  display: none;
+}
+
+/* SECTION HERO */
+
+.hero{
+  background: #1f5e4a;
+  margin: 10px 20px;
+  border-radius: 30px;
+  color: aliceblue;
+  padding: 50px 0;
+  height: 62vh;
+  align-items: center;
+  position: relative;
+}
+.hero_conteudo{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hero .hero_acoes{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.hero .hero_acoes a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.hero .hero_acoes button {
+  padding: 16px 24px;
+  background: #f4c542;
+  color: #1f5e4a;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.hero_imagens img {
+  width: 200px;
+  position: absolute;
+  margin-top: -185px;
+  right: 40px;  
+}
+
+/* SECTION SOBRE */
+
+.sobre {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sobre_info{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;/* faz com oq o texto não de linha ñ deixando o texto um abaixo do outro*/
+  gap: 24px;
+}
+.sobre_conteudo{
+  flex: 1;
+}
+
+@media(max-width: 768px){
+  .sobre_info{
+    flex-direction: column;
+  }
+}
+
+.sobre_imagem{
+  flex: 1;
+  /*aspect-ratio: 1/1;/* deixa a imagem quadrada*/
+  margin-top: 40px;
+  padding: 24px 24px 0 24px;
+  background: #f5cf64;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+}
+.imagem_belga{
+  width: 200px;
+}
+.sobre_indicadores{
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.sobre_indicador_item{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sobre_indicador_item strong {
+  font-family: "fredoka", sans-serif;
+  font-size: 40px;
+  color: #1f5e4a;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border-bottom: 1px solid rgb(67, 31, 31);
+}
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+#sobre {
+  padding: 20px;
+}
+h2 {
+  color: rgb(27, 124, 124);
+}
+.btn {
+  width: 100%;
+  padding: 8px 10px;
+  border: 0px;
+  background: #f5cf64;
+  color: #1f5e4a;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+}
+input {
+  margin-top: 0.7px;
+  padding: 10px;
+  border-radius: 8px;
+}
+/*
+.inativo {
+  background: red;
+  cursor: not-allowed;
+}
+.error-input {
+  border-color: rgb(196, 61, 61);
+}*/
+
+form {
+  width: 40%;
+  /*border: 1px solid rgb(181, 66, 66);   mostrar linha sobre a borda*/
+  margin: 50px auto; /*centralizar com auto*/
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+/* BUTTON */
+
+.imagem {
+  display: flex;
+  height: 120px;
+}
+@media(max-width: 768px){/*Deixa hero responsivo, aceita o comando abaixo.*/
+  .hero .hero_conteudo{
+    align-items: center;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 38px;
+  }
+  .hero_imagens{
+    display: none;/*tira a imagem*/
+  }
+}
+
+/* CONTATO */
+
+.contato{
+  background: #1f5e4a;
+  color: aliceblue;
+  padding: 44px ;
+}
+.contato .titulo_secao{
+  color: aliceblue;
+}
+.contato_container{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.contato_info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contato_formulario{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contato_formulario input{
+  width: 100%;
+  padding: 8px 16px;
+  border: 0;
+
+}
+.contato_info p{
+  display: flex;
+  gap: 8px;
+}
+/* FOOTER */
+footer {
+  background: #f5cf64;
+  color: #1f5e4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  font-size: 14px;
+}
